@@ -40,15 +40,31 @@ void Game::Input() {
 void Game::HandleEvent() {
     SDL_Scancode sc;
     SDL_Keycode kc;
+    int mouseX, mouseY;
+    Uint32 mouseState;
     switch (m_evento.type) {
         case SDL_QUIT:
             m_running = false;
             break;
+        case SDL_KEYDOWN:
+            if(m_evento.key.keysym.scancode == SDL_SCANCODE_ESCAPE){
+                mouseState = SDL_GetMouseState(&mouseX, &mouseY);
+                cout << "El raton esta en: " << mouseX << ", " << mouseY<<" -> "<< mouseState <<endl;
+                
+            }
+            if(m_evento.key.keysym.scancode == SDL_SCANCODE_F1){
+                SDL_WarpMouseInWindow(m_window,200,200);
+            }
+            if(m_evento.key.keysym.scancode == SDL_SCANCODE_F2){
+                SDL_ShowCursor(0);
+            }
+            if(m_evento.key.keysym.scancode == SDL_SCANCODE_F3){
+                SDL_ShowCursor(1);
+            }
     }
 }
 
 void Game::Update() {
-
 }
 
 void Game::Render() {
