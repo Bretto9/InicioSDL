@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>ejemplo.png</itemPath>
       <itemPath>game.cpp</itemPath>
       <itemPath>game.h</itemPath>
       <itemPath>hola.bmp</itemPath>
@@ -45,9 +46,13 @@
             <linkerLibLibItem>mingw32</linkerLibLibItem>
             <linkerLibLibItem>SDL2main</linkerLibLibItem>
             <linkerLibLibItem>SDL2.dll</linkerLibLibItem>
+            <linkerLibLibItem>SDL2_image</linkerLibLibItem>
+            <linkerLibLibItem>SDL2_image.dll</linkerLibLibItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="ejemplo.png" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="game.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="game.h" ex="false" tool="3" flavor2="0">
@@ -81,6 +86,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="ejemplo.png" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="game.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="game.h" ex="false" tool="3" flavor2="0">

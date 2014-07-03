@@ -80,6 +80,8 @@ void Game::HandleEvent() {
                 img_vx = 0.0;
             }
             break;
+        default:
+            break;
     }
 }
 
